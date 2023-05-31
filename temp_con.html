@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="temp_con.css">
+</head>
+<body style="background-color: rgb(219, 255, 244);">
+    <h1>Temperature Converter</h1>
+    <div class="converter">
+        <input type="number" id="inputTemp" placeholder="Enter value"><br><br>
+        <select id="inputUnit" style="margin-right: 10px;">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+        <select id="outputUnit" style="margin-left: 10px;">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+        </select><br><br>
+        <input type="text" id="outputTemp" placeholder="Result" readonly>
+    </div>
+
+    <script src="temp_con.js"></script>
+</body>
+</html>
